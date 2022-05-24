@@ -1,0 +1,415 @@
+
+
+
+*@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+    padding: o;
+    margin: o;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #333232;
+    --secondary: #788AA3; 
+    --text-color: #2B2B2B;
+    --base: #E2DBBE;
+    --alternative: #EF798A;
+
+}
+
+*{
+    padding: o;
+    margin: o;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #E2DBBE;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 17px;
+    cursor: pointer;
+    background-image: url(../images/mendoza\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2.4em 0; 
+}
+
+nav ul{
+    display: flex;
+    gap: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+nav li:hover{
+    background-color: dimgrey;
+}
+
+.titulo{
+    color: #2B2B2B;
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 2.4em;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2.4em;
+    justify-content: center;
+}
+
+.box__info{
+    padding: 2.4em;
+    display: flex;
+    flex-direction: column;
+}
+
+.box__title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--primary);
+    font-size: 2.4em;
+}
+
+.box__subtitle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary);
+    font-size: 2em;
+}
+
+.box__text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    font-size: 1.6em;
+}
+
+.info{
+    display: flex;
+    padding: 6rem;
+    align-items: center;
+}
+
+.info__img{
+    flex: 1 1 50%;
+}
+
+.info__box{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title{
+    font-size: 2.4em;
+    color: var(--primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1em;
+}
+
+.info__descrpcion{
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 1em;
+}
+
+.box__img1{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: black;
+}
+
+.cards:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box__img2{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: black;
+    transition: all 0.25s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: var(--secondary);
+    height:  100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+
+.fot__title{
+    font-size: 2.4em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/* Pagina Galeria*/
+
+.menu__inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 20px;
+    cursor: pointer;
+    background-image: url(../images/mendoza\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+
+h2{
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.gallery__img:nth-of-type(1){
+    grid-column: 1 / 7;
+}
+
+.gallery__img:nth-of-type(2){
+    grid-column: 7 / 13;
+    
+}
+
+.gallery__img:nth-of-type(3){
+    grid-column: 1 / 5;
+    grid-row: 2;
+}
+
+.gallery__img:nth-of-type(4){
+    grid-column: 5 / 9;
+    grid-row: 2;
+}
+
+.gallery__img:nth-of-type(5){
+    grid-column: 9 / 13;
+    grid-row: 2 / 4;
+}
+
+
+.titulo__3{
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Pagina Servicios*/
+
+.contenedor-actividades{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.imagen__1{
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.imagen__4{
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.titulo__3{
+    text-align: center;
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+/* Pagina de Nosotros*/
+
+.parrafo__cabaña{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    color: black;
+}
+
+.info__complejo{ 
+    font-size: 2.4em;
+    font-weight: 300;
+    margin: 1em;
+}
+
+/* Pagina Contacto*/
+
+.form{
+    background-image: url(../images/mendoza\ montaña.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+.form{
+    width: 450px;
+    margin: 0 auto;
+    background-color: black;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;;
+}
+
+.titulo__form{
+    color: #333232;
+    text-align: center;
+    margin: 0;  
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.botones{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.botones__form{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.enviar{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 1em;
+     
+}
+
+.enviar:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-color: darkslategrey;
+    }
+
+    header{
+        height: 400%;
+        width: 400%;
+    }
+
+
+
+    footer{
+        background-color: #EF798A;
+        height: 500%;
+        width: 500%;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .gallery__img:nth-of-type(1){
+        grid-column: 1 / 2;
+    }
+    
+    .gallery__img:nth-of-type(2){
+        grid-column: 1 / 2;
+        grid-row: 2;
+        
+    }
+    
+    .gallery__img:nth-of-type(3){
+        grid-column: 1 / 2;
+        grid-row: 3;
+    }
+    
+    .gallery__img:nth-of-type(4){
+        grid-column: 1 / 2;
+        grid-row: 4;
+    }
+    
+    .gallery__img:nth-of-type(5){
+        grid-column: 1 / 2;
+        grid-row: 5;
+    }
+    
+    .gallery__img:nth-of-type(6){
+        grid-column: 1 / 2;
+        grid-row: 6;
+    }
+
+    .contenedor-actividades{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .imagen__1{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    
+    .imagen__4{
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+    
+}
