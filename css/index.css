@@ -172,6 +172,8 @@ footer{
     align-items: center;
     justify-content: space-around;
     margin-top: 10em;
+    background: linear-gradient(to top, #b2fefa, #0ed2f7);
+
 }
 
 .fot__title{
