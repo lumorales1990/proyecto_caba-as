@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Vistalba</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <header>
@@ -27,10 +28,18 @@
 
 <main>
     <div class="contenedor-actividades">
-        <img class="imagen__1" src="../images/serv4.jpg" alt="">
-        <img class="imagen__2" src="../images/serv5.jpg"  alt="">
-        <img class="imagen__3" src="../images/serv3.jpg" alt="">
-        <img class="imagen__4" src="../images/portones del parque.jpg" alt="">
+        <img class="imagen__1" src="../images/serv4.jpg" alt="" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <img class="imagen__2" src="../images/serv5.jpg"  alt="" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <img class="imagen__3" src="../images/serv3.jpg" alt="" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+        <img class="imagen__4" src="../images/portones del parque.jpg" alt="" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
     </div>
 </main>
 <footer>
@@ -47,5 +56,10 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>
