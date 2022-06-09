@@ -1,0 +1,29 @@
+*{
+    padding: o;
+    margin: o;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: beige;
+} 
+
+nav ul{
+    display: flex;
+    gap: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1em;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+nav li:hover{
+    background-color: dimgrey;
+}

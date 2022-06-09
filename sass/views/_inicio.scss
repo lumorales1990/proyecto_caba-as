@@ -1,0 +1,112 @@
+
+.titulo{
+    color: #2B2B2B;
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card-text{
+    font-size: medium;
+}
+
+.card-title{
+    text-align: center;
+    font-size: x-large;
+    justify-content: center;
+    text-decoration: underline;
+
+    &-title{
+        text-align: center;
+        font-size: x-large;
+        justify-content: center;
+        text-decoration: underline;
+    }
+}
+
+
+.info{
+    display: flex;
+    padding: 6rem;
+    align-items: center;
+}
+
+.info__box{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title{
+    font-size: 2.4em;
+    color: var(--primary);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1em;
+    color: #333232;
+    text-align: center;
+}
+
+.info__descrpcion{
+    font-size: 2em;
+    font-weight: 300;
+    font-family: cursive;
+    background-color: #333232;
+    color: white;
+    margin: 10px;
+}
+
+.info__img{
+    flex: 1 1 50%
+}
+
+.box__img1{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: black;
+}
+
+
+.box__img2{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: black;
+}
+
+.btn{
+    font-size: medium;
+    background-color: black;
+    color: white;
+}
+
+.cards:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.box__img2{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: black;
+    transition: all 0.25s;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 600px){
+    
+}

@@ -1,0 +1,23 @@
+.parrafo__cabaña{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    color: black;
+}
+
+.titulo__complejo{
+    margin: 30px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fot__nosotros{
+    width: 1200px;
+}
+
+@media screen and (max-width: 600px){
+    
+}

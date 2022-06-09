@@ -1,0 +1,48 @@
+.contenedor-actividades{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+.imagen__1{
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.imagen__4{
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+@media screen and (max-width: 600px){
+    .contenedor-actividades{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .imagen__1{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    
+    .imagen__4{
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+
+    .card{
+        grid-column: 1 / 2;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+
