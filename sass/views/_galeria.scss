@@ -1,9 +1,6 @@
 
  .menu__inicio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flex(row, space-around, flex-end, 0)
     font-size: 20px;
     cursor: pointer;
     background-size: cover;

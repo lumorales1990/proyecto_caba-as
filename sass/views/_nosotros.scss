@@ -1,4 +1,5 @@
 .parrafo__cabaña{
+    @include flex(row, center, space-around, 0)
     display: flex;
     flex-direction: row;
     align-items: center;

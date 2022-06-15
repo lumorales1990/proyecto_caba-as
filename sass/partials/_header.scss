@@ -1,11 +1,8 @@
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    @include flex(row, space-between, flex-end, 0)
     font-size: 17px;
     cursor: pointer;
-    background-color: darkcyan;
+    background-color: map-get($colors, secondary);
     background-size: cover;
     background-position: center;
     padding: 2.4em 0; 

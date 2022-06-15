@@ -1,8 +1,15 @@
+    // colors
+    
+  $colors: (  
+    primary: #333232,
+    secondary: #788AA3, 
+    text-color: #2B2B2B,
+    base: #E2DBBE,
+    alternative: #EF798A
+);
 
-    $primary: #333232;
-    $secondary: #788AA3; 
-    $text-color: #2B2B2B;
-    $base: #E2DBBE;
-    $alternative: #EF798A;
-
-
+@each $color, $value in $colors{
+    #{$color} {
+        color: #{$value};
+    }
+}

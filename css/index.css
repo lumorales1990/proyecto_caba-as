@@ -1,4 +1,19 @@
 @charset "UTF-8";
+primary {
+  color: #333232; }
+
+secondary {
+  color: #788AA3; }
+
+text-color {
+  color: #2B2B2B; }
+
+base {
+  color: #E2DBBE; }
+
+alternative {
+  color: #EF798A; }
+
 * {
   padding: o;
   margin: o;
@@ -8,7 +23,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: beige; }
+  background-color: white; }
 
 nav ul {
   display: flex;
@@ -66,8 +81,9 @@ nav li:hover {
 .menu__inicio {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
+  gap: 0;
   font-size: 20px;
   cursor: pointer;
   background-size: cover;
@@ -110,7 +126,7 @@ nav li:hover {
   grid-row: 3; }
 
 @media screen and (max-width: 600px) {
-  .info__title {
+  .info__title, .info__title--active {
     text-align: centers; }
   .gallery {
     display: grid;
@@ -149,8 +165,12 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 
+.card-img-top {
+  background-size: cover; }
+
 .card-text {
-  font-size: medium; }
+  font-size: medium;
+  font-size: small; }
 
 .card-title {
   text-align: center;
@@ -159,7 +179,7 @@ main {
   text-decoration: underline; }
   .card-title-title {
     text-align: center;
-    font-size: x-large;
+    font-size: medium;
     justify-content: center;
     text-decoration: underline; }
 
@@ -173,13 +193,17 @@ main {
   display: flex;
   flex-direction: column; }
 
-.info__title {
+.info__title, .info__title--active {
   font-size: 2.4em;
-  color: var(--primary);
+  color: #333232;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 1em;
   color: #333232;
-  text-align: center; }
+  text-align: center;
+  text-decoration: underline; }
+  .info__title--active {
+    background-color: #333232;
+    color: white; }
 
 .info__descrpcion {
   font-size: 2em;
@@ -226,6 +250,11 @@ main {
 .parrafo__cabaña {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+  gap: 0;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   margin: 10px;
   color: black; }
@@ -243,7 +272,7 @@ main {
 .contenedor-actividades {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 2rem; }
 
 .imagen__1 {
@@ -278,20 +307,20 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 0;
   font-size: 17px;
   cursor: pointer;
-  background-color: darkcyan;
+  background-color: #788AA3;
   background-size: cover;
   background-position: center;
   padding: 2.4em 0; }
 
 footer {
-  background-color: var(--secondary);
+  background-color: #788AA3;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 10em;
-  background-color: dimgray;
   color: black; }
 
 .fot__title {
