@@ -1,3 +1,4 @@
+
 header {
     @include flex(row, space-between, flex-end, 0)
     font-size: 17px;
@@ -6,6 +7,10 @@ header {
     background-size: cover;
     background-position: center;
     padding: 2.4em 0; 
+}
+
+header{
+    background-color: darkgray;
 }
 
 

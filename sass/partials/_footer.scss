@@ -1,5 +1,5 @@
 footer{
-    background-color: map-get($colors, secondary);
+    background-color: darkgray;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,6 +13,13 @@ footer{
     justify-content: space-around;
 }
 
+.fot__informacion{
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 ul li{
     list-style: none;
 }
+
