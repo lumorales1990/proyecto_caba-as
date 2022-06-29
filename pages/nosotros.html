@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-
+<body>
 <!-- menu principal -->
 <header>
     <img src="../images/logo 2.png" alt="">
@@ -45,45 +45,73 @@
           </div>
         </div>
       </nav>  
-  
-      
-</header>
+  </header>
 
 <!-- cuerpo de la pagina -->
-      <section>
-        <h2 class="titulo__complejo">CONOCE NUESTRO COMPLEJO</h2>
-      </section>
-        <main>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                  <img src="../images/c5.jpg" class="d-block w-100" alt="...">
-              </div>
-                  <div class="carousel-item">
-                    <img src="../images/c2.jpg" class="d-block w-100" alt="..." height="600px">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/c3.jpg" class="d-block w-100" alt="..." height="600px">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/c4.jpg" class="d-block w-100" alt="..." height="600px">
-                  </div>
-                </div>
-              <div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+    
+  <!-- Carousel -->
+
+    <h1>CONOCE NUESTRAS INSTALACIONES</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../images/imagen car 1.jpg" class="d-block w-100" alt="..." height="500px" width="300px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel">NUESTRA CABAÑA</h5>
+            <p class="carousel__par">Nuestra Cabaña cuenta con 2 habitaciones un baño y un altillo el cual contiene una cama matrimonial.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../images/imagen car 2.jpg" class="d-block w-100" alt="..."  height="500px" width="300px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel">NUESTROS ESPACIOS COMUNES</h5>
+            <p class="carousel__par">Contiene una piscina, parrilla y un amplio jardin para poder realizar diferentes actividades.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../images/imagen car 3.jpg" class="d-block w-100" alt="..."  height="500px" width="300px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel">LUGARES PARA DESCANSAR</h5>
+            <p>Contamos con un quincho con sillones, ventilador y lugares para guardar bebidas asi disfrutas del verano y invierno.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- Servicios Opcionales -->
+
+    <div>
+      <h1>NUESTROS SERVICIOS OPCIONALES</h1>
+    <picture class="imagenes">
+      <img class="imagenes__1" src="../images/limpieza.png" alt="" height="100px" width="100px">
+      <img class="imagenes__2" src="../images/lavanderia.png" alt=""  height="100px" width="100px">
+      <img class="imagenes__3" src="../images/montaña icono.png" alt=""  height="100px" width="100px">
+      <img class="imagenes__4" src="../images/parrilla.png" alt=""  height="100px" width="100px">
+      <img class="imagenes__5" src="../images/patio.png" alt=""  height="100px" width="100px">
+      <img class="imagenes__6" src="../images/taza de te.png" alt=""  height="100px" width="100px">
+      <img class="imagenes__7" src="../images/pscina.png" alt=""  height="100px" width="100px">
+    </picture>
+    </div>
+  
           
-         <!-- pie de pagina      -->
+         
+  <!-- pie de pagina      -->
          
           <footer class="fot__nosotros">
-                <h3 class="fot__title">SEGUINOS</h3>
+                <h1>SEGUINOS</h1>
                 <ul>
                     <li><img src="../images/bxl-facebook-square.svg" alt=""></li>
                     <li><img src="../images/bxl-instagram-alt.svg" alt=""></li>
@@ -101,8 +129,5 @@
              <script>
                 AOS.init();
               </script>
-        
-        
-            
         </body>
         </html>

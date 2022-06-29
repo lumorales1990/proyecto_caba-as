@@ -12,7 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-
+<body>
+  
 <!-- menu principal -->
 <header>
     <img src="../images/logo 2.png" alt="">
@@ -48,32 +49,74 @@
       </nav>  
     
 </header>
-
+<body>
 <!-- cuerpo de la pagina  -->
-<section>
-    <h3 class="titulo__3"> CONOCE NUESTRAS ACTIVIDADES</h3>
+
+  <div>
+    <h1 class="titulo__3"> CONOCE NUESTRAS ACTIVIDADES</h1>
+    <p class="titulo__4">En nuestro complejo tambien podes contar con multiples actividades extras, como rappel, raftign, caminatas en alta montaña, caminos del vino, etc. Tenemos a su disposicion un guia el cual los puede llevar a realizar todas las actividades que deseen, y asi poder conocer los lugares mas hermosos de nuetra provincia</p>
+  </div>
+  
+  <!-- Carousel -->
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../images/c2.jpg" class="d-block w-100" alt="..." height="500px" width="300px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel">PLAYA CARRIZAL</h5>
+          <p class="carousel__par">Mendoza cuenta con dos playas propias, en ellas podes nadar por el lago carrizal, andar en lancha y hacer un rico asado para disfrutar en familia.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../images/c3.jpg" class="d-block w-100" alt="..."  height="500px" width="300px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel">LUJAN PLAYA</h5>
+          <p class="carousel__par">Contiene diferentes puestos para comer y una gran vista al rio Mendoza.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../images/rafting.jpg" class="d-block w-100" alt="..."  height="500px" width="300px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel">RAFTING</h5>
+          <p>Podes realizar esta hermosa actividades en diferentes puntos de Mendoza.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../images/rappel.jpg" class="d-block w-100" alt="..."  height="500px" width="300px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel">RAPPEL</h5>
+          <p>Animate a ver desde las alturas las mejores postales de las montañas.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <section>
+
+    <!-- Ubicacion -->
+
+    <h1>CONOCE MENDOZA</h1>
+  <section>    
+      <iframe height="90%" width="90%" class="video" src="https://www.youtube.com/embed/3BTXeKqM3_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" w allowfullscreen></iframe>
 </section>
 
-<main>
-    <div class="contenedor-actividades">
-        <img class="imagen__1" src="../images/serv4.jpg" alt="" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">
-        <img class="imagen__2" src="../images/serv5.jpg"  alt="" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">
-        <img class="imagen__3" src="../images/serv3.jpg" alt="" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">
-        <img class="imagen__4" src="../images/portones del parque.jpg" alt="" data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000">
-    </div>
-</main>
 
 <!-- pie de pagina -->
-<footer>
-        <h3>SEGUINOS</h3>
+    <footer>
+        <h1>SEGUINOS</h1>
         <ul>
             <li><img src="../images/bxl-facebook-square.svg" alt=""></li>
             <li><img src="../images/bxl-instagram-alt.svg" alt=""></li>

@@ -16,6 +16,8 @@
     text-decoration: underline;
 }
 
+// GALERIA DE IMAGENES
+
 .gallery{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -53,10 +55,12 @@
 }
 
 
-@media screen and (max-width: 600px){
+// MEDIA SCREEN
+
+@media screen and (max-width: 768px){
 
     .info__title{
-        text-align: centers;
+        text-align: left;
     }
 
     .gallery{

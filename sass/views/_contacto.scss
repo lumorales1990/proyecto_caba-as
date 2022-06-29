@@ -5,7 +5,7 @@
 }
 
 .form{
-    background-color: black;
+    background-color: map-get($colors, secondary);
     width: 450px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -46,6 +46,9 @@
     cursor: pointer;
     transform: scale(1.1, 1.1);
 }
+
+// MEDIA SCREEN
+
 
 @media screen and (max-width: 600px){
     

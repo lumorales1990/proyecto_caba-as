@@ -1,24 +1,85 @@
-.parrafo__cabaña{
-    @include flex(row, center, space-around, 0)
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px;
-    color: black;
-}
 
-.titulo__complejo{
-    margin: 30px;
+h1{
+    color: map-get($colors, base);
+    text-shadow: 1px 2px black, 0 0 25px slategrey, 0 0 5px slategray;
     text-align: center;
+    margin: 25px; 
     text-decoration: underline;
-    font-size: 2.4em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.fot__nosotros{
-    width: 1200px;
+.imagenes{
+    margin: 20px;
+
+    &__1{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__2{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__3{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__4{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__5{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__6{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__7{
+        margin: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 
-@media screen and (max-width: 600px){
+
+.carousel{
+    font-size: 20px;
+    color: map-get($colors, primary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carousel__par{
+    color: map-get($colors, base);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+// MEDIA SCREEN
+
+@media screen and (max-width: 7680px){
+
+    h1{
+        text-align: left;
+    }
+
+    .imagenes{
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
     
 }
