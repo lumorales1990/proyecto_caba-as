@@ -77,6 +77,10 @@ nav li:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1); }
 
+@media screen and (max-width: 768px) {
+  .titulo__form {
+    text-align: center; } }
+
 .menu__inicio {
   display: flex;
   flex-direction: row;
@@ -126,7 +130,7 @@ nav li:hover {
 
 @media screen and (max-width: 768px) {
   .info__title, .info__title--active {
-    text-align: left; }
+    text-align: center; }
   .gallery {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -237,12 +241,10 @@ main {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
 
 @media screen and (max-width: 768px) {
-  .conteiner {
-    gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5px; } }
+  main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem; } }
 
 h1 {
   color: #E2DBBE;
@@ -293,7 +295,7 @@ h1 {
 
 @media screen and (max-width: 7680px) {
   h1 {
-    text-align: left; }
+    text-align: center; }
   .imagenes {
     flex-direction: column;
     gap: 2rem;
@@ -320,7 +322,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .titulo__4 {
-    font-size: 10px; } }
+    font-size: 10px;
+    text-align: center; } }
 
 header {
   display: flex;
@@ -337,6 +340,10 @@ header {
 
 header {
   background-color: darkgray; }
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 30px; } }
 
 footer {
   background-color: darkgray;
@@ -358,3 +365,31 @@ footer {
 
 ul li {
   list-style: none; }
+
+.redes {
+  padding: 30px; }
+
+.redes h1 {
+  text-align: center;
+  font-weight: bold; }
+
+.sociales {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.sociales li {
+  display: inline-block; }
+
+.sociales {
+  padding: auto; }
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 200px;
+    width: 600px; }
+  h1 {
+    text-align: center; }
+  .sociales {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
