@@ -51,8 +51,9 @@ ul li{
 
 
     footer{
-        height: 200px;
-        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     h1{
@@ -64,4 +65,39 @@ ul li{
         grid-template-columns: repeat(1, 1fr);
     }
     
+}
+
+@media screen and (max-width: 576px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .sociales{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .sociales{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

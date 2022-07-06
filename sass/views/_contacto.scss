@@ -2,6 +2,9 @@
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0 auto;
+    padding: 2.4em;
+    display: flex;
+    flex-direction: column;
 }
 
 .form{
@@ -10,7 +13,10 @@
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 20px;
-    border-radius: 7px;;
+    border-radius: 7px;
+    padding: 2.4em;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo__form{
@@ -47,13 +53,47 @@
     transform: scale(1.1, 1.1);
 }
 
+
 // MEDIA SCREEN
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 990px){
+
+    .form{
+        font-size: medium;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 
     .titulo__form{
         text-align: center;
     }
     
 }
+
+
+@media screen and (max-width: 600px){
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 576px){
+    
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+     }   
+        .titulo__form{
+            font-size: small;
+            text-align: center;
+        }
+    }
