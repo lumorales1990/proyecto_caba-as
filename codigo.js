@@ -23,7 +23,9 @@
 let Promedio = () => {
     let nota1=prompt("7");
     let nota2=prompt("8");
-    let nota3=prompt("10");
+    let nota3=prompt("10")
+    let notaFinal=nota1+ " "+nota2+" "+nota3;
+    return notaFinal
 }
 
 var nota1= parseInt(prompt("digite la nota 1"));
@@ -33,4 +35,4 @@ var nota3= parseInt(prompt("digite la nota 3"));
 suma = nota1 + nota2 + nota3;
 promedio = suma/3;
 
-alert("El resultado es " + promedio);
+alert("El Promedio Final del Alumno es " + promedio);
