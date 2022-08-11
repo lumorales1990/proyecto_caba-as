@@ -1,6 +1,8 @@
 
 // DOM EN JS
 
+
+
 const reservas = {
   "cabaña1":{
     "id": 1,
@@ -40,5 +42,9 @@ for (let cabaña in reservas){
 }
 }
 tarjetas()
+
+miBoton.onclick = () => {
+  console.log ("Agregaste la reserva");
+}
 
 
