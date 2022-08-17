@@ -48,11 +48,85 @@
     </div>
   </div>
 </nav>       
-          
 </header>
 
+<body>
+
+<!-- BARRA DE NAVEGACION -->
+
+      <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+             <a class="navbar-brand" href="#">VILLA VISTALBA</a>
+              <button id="toggleMyModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver Reservas <i class="bi bi-bag-check-fill"></i>
+              </button>     
+          </div>
+      </nav>
+
+
+
+ <!-- MODAL --> 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Reserva</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                     <tr id="footer">
+                     <th scope="row" colspan="5">Reservas Vacias - Comenza a Reservar!</th> 
+                    </tr>
+                </tfoot>
+                </table>
+          <div class="row" id="cards"></div>
+        </div>  
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ya esta lista mi Reserva</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<br/>
+
+<!-- CARD -->
+
+<section class="d-flex justify-content-center mt-5">
+  <article class="container">
+    <div id="contenedor-reservas" class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="card m-3 p-3">
+          <img src="./imagenes/imagencabaña1.jpg" class="card-img-top" alt="Cabañas Malbec">
+          <div class="card-body">
+            <h5>Cabañas Malbec</h5>
+            <p>$ 20000</p>
+            <button class="btn btn-success">Reservar</button>
+        </div>
+    </div>
+  </div>  
+  </article>
+</section>
+
+
+</body>
+
 <!-- cards -->
-    <section id="principal">
+    <!-- <section id="principal">
       <article id="titulo">
         <h1>UN LUGAR PARA DESCANSAR</h1>
       </article> 
@@ -78,13 +152,18 @@
               <a href="#" class="btn btn-primary">VER MAS...</a>
             </div>
           </div>
-    </main>
+    </main> -->
     
-    <div id="vista"></div>
-    <button id="miBoton" class="btn" onclick="show()">RESERVAR</button>
+    <!-- <section>
+      <article id="tarjetas">
+      </article>
+    </section> -->
+
+    <!-- <div id="vista"></div> -->
+    <!-- <button id="miBoton" class="btn" onclick="show()">RESERVAR</button> -->
 
   <!-- Imagenes de Mendoza   -->
-      <div>
+      <!-- <div>
         <h1>CONOCE MENDOZA</h1>
       <picture class="circulo">
         <img class="circulo__1" src="./images/imagen circulo 1.jpg" alt="">
@@ -94,14 +173,14 @@
       </picture>
       </div>
      
-   <!-- ubicacion del lugar -->
-       <section>
+    ubicacion del lugar -->
+       <!-- <section>
             <article class="info__box">
                 <h1 class="info__title info__title--active">UBICACION</h1>
                 <p class="info__descrpcion">Solo 20 minutos de manejo sobre autopista lo separan de la ciudad de Mendoza, 6 minutos del centro de Lujan de Cuyo y media hora del Aeropuerto Internacional, estas grandes condiciones hicieron que pensáramos uno de los complejos de Mendozacon mejor ubicacíon en la zona.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.80164196475!2d-68.92317918481137!3d-33.03535598089482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967ddf44b964ce33%3A0xf80f2a919aa0786a!2sBarrio%20La%20Capilla!5e0!3m2!1ses-419!2sar!4v1654110102037!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
             </article>
-      </section>
+      </section> --> 
 
         <!-- pie de pagina  -->
   <footer>
@@ -115,6 +194,7 @@
         </div>
       </section>  
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
