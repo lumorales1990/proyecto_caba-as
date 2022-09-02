@@ -1,0 +1,25 @@
+ [{
+    "id": 1,
+    "foto": "../imagenes/imagencabaña1.jpg",
+    "nombre": "Cabaña Malbec",
+    "precio": 25000
+},
+{
+    "id": 2,
+    "foto": "../imagenes/imagencabaña2.jpg",
+    "nombre": "Cabaña Oliva",
+    "precio": 20000
+},
+{
+    "id": 3,
+    "foto": "../imagenes/imagencabaña3.jpg",
+    "nombre": "Cabaña Viñedo",
+    "precio": 15000
+},
+{
+    "id": 4,
+    "foto": "../imagenes/imagennieve.jpg",
+    "nombre": "Cabaña Cabernet",
+    "precio": 10000
+}
+]
